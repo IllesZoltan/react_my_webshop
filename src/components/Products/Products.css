@@ -1,0 +1,45 @@
+.productsContent{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    border-top: 0px;
+    text-align: left;
+}
+
+.prodBox{
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.prod_data{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.prod_data > div{
+    padding: 3px;
+}
+.prod_data > :last-child{
+    width: 40%;
+}
+
+.buttons{
+    width: 80%;
+    display: inline-flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.PBImage{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+
+.boxes{
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
