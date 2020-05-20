@@ -10,7 +10,7 @@ class DisplayCart extends Component {
 
     totalPrice() {
         let finalPrice = 0;
-        this.props.products.forEach(element => {
+        this.props.carts.forEach(element => {
             finalPrice += this.productPrice(element);
         });
         return finalPrice
@@ -19,7 +19,7 @@ class DisplayCart extends Component {
     render() {
         return (
             <div className="listContainer">
-                {this.props.products.map((elem, index) => {
+                {this.props.carts.map((elem, index) => {
                     return (
                         <div key={index} className="list">
                             <div>{elem.ordered}</div>
@@ -44,6 +44,7 @@ class DisplayCart extends Component {
 
 function mapsStateToProps(state) {
     return {
+        carts: state.cart,
         products: state.products
     }
 }

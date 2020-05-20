@@ -4,6 +4,13 @@ import './Products.css'
 import ProductBox from './ProductBox'
 
 class Products extends React.Component {
+
+    stockCheck(product){
+        let retValue = 0
+        if(product.onstock > 0) retValue = 1
+        return retValue
+    }
+
     render() {
         return (
             <div className="productsContent">

@@ -9,6 +9,11 @@
   /* text-align: center; */
 }
 
+.offerings{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 @media screen and (min-width: 768px){
   .container{
     width: 750px;
@@ -25,4 +30,8 @@
   }
 }
 
+@keyframes fade{
+  from {opacity: .2;}
+  to {opacity: 1;}
+}
 

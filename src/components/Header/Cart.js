@@ -7,14 +7,14 @@ import './Header.css'
 class Cart extends Component {
 
     orderedProducts() {
-        const prodArr = [];
-        this.props.products.forEach(elem => {
+        const cartArr = [];
+        this.props.carts.forEach(elem => {
             
             if (elem.ordered > 0) {
-                prodArr.push(elem)
+                cartArr.push(elem)
             }
         });
-        return prodArr;
+        return cartArr;
     }
 
     carttext() {
@@ -37,8 +37,8 @@ class Cart extends Component {
 
 function mapStateToProps(state) {
     return {
+        carts: state.cart,
         products: state.products
-        // cartText: state.cart.price * state.cart.ordered
     }
 
 }
