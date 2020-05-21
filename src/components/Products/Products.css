@@ -3,12 +3,19 @@
     height: 500px;
     border: 1px solid black;
     border-top: 0px;
+    background-color: ivory;
+    text-align: left;
+}
+
+.specs-container{
+    margin: 20px;
     text-align: left;
 }
 
 .prodBox{
     width: 250px;
     height: 150px;
+    background-color: lemonchiffon;
     border: 1px solid black;
 }
 

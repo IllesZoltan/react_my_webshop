@@ -64,7 +64,9 @@ class ProductBox extends React.Component {
 
         return (
             <div className="prodBox">
-                <div className="PBImage">Image</div>
+                <div className="PBImage">
+                    <Link to={url}><img src={this.props.product.images[0]} alt="allimgs"/></Link>
+                </div>
                 <div className="prod_data">
                     <div><Link to={url}>{this.props.product.name}</Link></div>
                     <div>{this.props.product.SKU}</div>
@@ -93,10 +95,9 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps(state, props) {
     return {
-        carts: state.cart,
-        products: state.products
+        carts: state.cart
     }
 }
 

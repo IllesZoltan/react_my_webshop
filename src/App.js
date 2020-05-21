@@ -8,6 +8,7 @@ import ProductPage from './components/Products/ProductPage';
 import Header from './components/Header/Header';
 import Offerings from './components/Offerings/Offerings';
 import Footer from './components/Footer/Footer';
+import CartPage from './components/Header/CartPage';
 
 
 const initialState = {
@@ -33,9 +34,9 @@ const initialState = {
       onstock: 5,
       description: "mobile phone description",
       specs: {
-        foo: "foo",
-        bar: "bar",
-        baz: "baz"
+        foo: "Mobile Phone foo",
+        bar: "Mobile Phone bar",
+        baz: "Mobile Phone baz"
       }
     },
     {
@@ -52,9 +53,9 @@ const initialState = {
       onstock: 9,
       description: "iPhone description",
       specs: {
-        foo: "foo",
-        bar: "bar",
-        baz: "baz"
+        foo: "I Phone foo",
+        bar: "I Phone bar",
+        baz: "I Phone baz"
       }
     },
     {
@@ -70,9 +71,9 @@ const initialState = {
       onstock: 0,
       description: "telephone description",
       specs: {
-        foo: "foo",
-        bar: "bar",
-        baz: "baz"
+        foo: "Tele Phone foo",
+        bar: "Tele Phone bar",
+        baz: "Tele Phone baz"
       }
     }
   ],
@@ -197,7 +198,7 @@ function App() {
           <Switch>
             <Route path="/productpage" render={() => <ProductPage ind={getQueryVariable()} />} />
             <Route path="/cart">
-              <p>Cart page</p>
+              <CartPage />
               <Link to="/checkout">Checkout</Link>
             </Route>
             <Route path="/checkout">
