@@ -31,12 +31,21 @@
     width: 40%;
 }
 
+
+
 .buttons{
     width: 90%;
     display: inline-flex;
     justify-content: flex-end;
     justify-content: space-between;
     margin-top: 15px;
+}
+
+.PB-remove-button::after{
+    content: 'Remove one';
+}
+.PB-add-button::after{
+    content: 'Add to Cart';
 }
 
 .PBImage{

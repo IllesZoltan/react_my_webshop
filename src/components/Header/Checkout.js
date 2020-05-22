@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import './Header.css'
 
 export default class Checkout extends Component{
-    constructor(props){
-        super(props);
 
-    }
 
     render(){
         return(
